@@ -5,7 +5,7 @@ int n,m,k,cnt;
 int arr[1005];
 int st[1005],pt1,pt2;
 
-int main2(){
+int main(){
     cin>>n>>m>>k;
     for(int i=1;i<=k;i++){
         cnt=1;

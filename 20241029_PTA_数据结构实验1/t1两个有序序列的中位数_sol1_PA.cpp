@@ -7,7 +7,7 @@ typedef struct Node {
     int value;
 } Node;
 
-void solve1() {
+int main() {
     int l, cnt = 0;
     cin >> l;
     Node *head, *p;
@@ -55,4 +55,6 @@ void solve1() {
     }
 
     cout << p->value << endl;
+
+    delete head;
 }

@@ -20,7 +20,7 @@ void printRes(vector<El> els) {
     }
 }
 
-void solve() {
+int main() {
     int length, firstAddr;
     cin >> firstAddr >> length;
 

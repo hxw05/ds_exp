@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void solve2() {
+int main() {
     int l, cnt = 0;
     cin >> l;
     int *a = new int[1e10];
