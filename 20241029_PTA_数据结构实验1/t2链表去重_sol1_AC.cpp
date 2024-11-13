@@ -30,7 +30,7 @@ int main() {
     bool* seen = new bool[1e6+10];
 
     while (length--) {
-        El current{};
+        El current;
         cin >> current.addr >> current.value >> current.nextAddr;
         next[current.addr] = current.nextAddr;
         all[current.addr] = current;
