@@ -6,8 +6,8 @@ using namespace std;
 int main() {
     int l, cnt = 0;
     cin >> l;
-    int *a = new int[1e10];
-    int *b = new int[1e10];
+    int *a = new int[99999];
+    int *b = new int[99999];
     for (int i = 0; i < 2 * l; i++) {
         cin >> a[i];
     }
