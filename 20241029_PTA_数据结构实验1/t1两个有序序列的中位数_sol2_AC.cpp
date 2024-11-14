@@ -4,10 +4,10 @@
 using namespace std;
 
 int main() {
-    int l, cnt = 0;
+    int l = 0;
     cin >> l;
     int *a = new int[99999];
-    int *b = new int[99999];
+
     for (int i = 0; i < 2 * l; i++) {
         cin >> a[i];
     }
@@ -15,5 +15,4 @@ int main() {
     cout << a[l-1];
 
     delete[] a;
-    delete[] b;
 }
