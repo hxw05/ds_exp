@@ -48,6 +48,7 @@ int main() {
 //
 //        cout << endl;
 
+        // 将两个小值中其中一个的位置用来存储和值，另一个置0弃用。
         a[minIndex] = a[minIndex] + a[subminIndex];
         s += a[minIndex];
         a[subminIndex] = 0;
