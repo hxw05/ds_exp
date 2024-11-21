@@ -10,6 +10,7 @@ int main() {
 
     int s = 0;
 
+    // 第n次循环中，数组为 00000000X 其中X是哈夫曼树的顶端权值，这种情况需要去掉，所以i<n-1
     for (int i = 0; i < n - 1; i++) {
         int minIndex;
         // 必须：minIndex指向的数组元素不能是空位（0）
