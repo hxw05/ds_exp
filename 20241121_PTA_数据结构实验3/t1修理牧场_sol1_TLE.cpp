@@ -14,12 +14,7 @@ int main() {
     for (int i = 0; i < n - 1; i++) {
         int minIndex;
         // 必须：minIndex指向的数组元素不能是空位（0）
-        for (int k = 0; k < n; k++) {
-            if (a[k] > 0) {
-                minIndex = k;
-                break;
-            }
-        }
+        for (int k = 0; a[minIndex = k] == 0; k++);
         for (int j = 0; j < n; j++) {
             if (a[j] == 0) continue;
             if (a[j] < a[minIndex]) {
@@ -28,12 +23,7 @@ int main() {
         }
         int subminIndex;
         // 必须：满足不能是空位的同时，subminIndex和minIndex不能指向同一个元素。
-        for (int k = 0; k < n; k++)
-            if (a[k] > 0 && k != minIndex) {
-                subminIndex = k;
-                break;
-            }
-
+        for (int k = 0; a[subminIndex = k] == 0 || k == minIndex; k++);
         for (int j = 0; j < n; j++) {
             if (a[j] == 0) continue;
             if (a[j] < a[subminIndex])
