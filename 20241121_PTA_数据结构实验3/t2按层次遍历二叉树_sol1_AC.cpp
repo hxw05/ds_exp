@@ -10,7 +10,7 @@ typedef struct Node {
     char value;
 } Tree;
 
-Tree *preOrderTraverse(Tree *t) {
+Tree *preOrderTraverseInput(Tree *t) {
     char ch;
     cin >> ch;
     if (ch == '#') {
@@ -18,15 +18,15 @@ Tree *preOrderTraverse(Tree *t) {
     } else {
         if (t == nullptr) t = new Tree;
         t->value = ch;
-        t->lchild = preOrderTraverse(t->lchild);
-        t->rchild = preOrderTraverse(t->rchild);
+        t->lchild = preOrderTraverseInput(t->lchild);
+        t->rchild = preOrderTraverseInput(t->rchild);
         return t;
     }
 }
 
 int main() {
     Tree *tree = new Tree;
-    tree = preOrderTraverse(tree);
+    tree = preOrderTraverseInput(tree);
 
     queue<Tree *> q;
 
