@@ -18,7 +18,9 @@ int componentOf[9999];
 
 int find(int x)
 {
-    if (componentOf[x] != x) componentOf[x] = find(componentOf[x]);
+    if (componentOf[x] != x) {
+        componentOf[x] = find(componentOf[x]);
+    }
     return componentOf[x];
 }
 
