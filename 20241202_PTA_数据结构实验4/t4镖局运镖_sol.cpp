@@ -28,7 +28,6 @@ int find(int x)
 int main() {
     int n, m;
     cin >> n >> m;
-
     vector<Edge> edges;
 
     int a, b, w;
