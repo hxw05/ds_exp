@@ -14,9 +14,9 @@ int part(SqList &L, int low, int high) {
     int p = L.r[low];
     L.r[0] = L.r[low];
     while (low < high) {
-        while (low < high && L.r[high] >= L.r[0]) high--;
+        while (low < high && L.r[high] >= p) high--;
         L.r[low] = L.r[high];
-        while (low < high && L.r[low] <= L.r[0]) low++;
+        while (low < high && L.r[low] <= p) low++;
         L.r[high] = L.r[low];
     }
     L.r[low] = L.r[0];

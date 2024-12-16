@@ -39,9 +39,7 @@ int main() {
 
         // 是K不是M（只针对K个入口进行统计，而不是整个表）
         for (int i = 0; i < K; i++) {
-            int failLength;
-
-            failLength = 1;
+            int failLength = 1;
             int j = i;
             while (isOccupied[j]) {
                 j = (j + 1) % M;
